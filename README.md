@@ -14,4 +14,13 @@ Pegar as informações que foram passadas pelo Stormer
 	 - o P/L tem que estar abaixo de 10 se o ROE estiver abaixo da taxa de juros; 
  - ROE acima da taxa de juros;
  - Volume de negociação > R$500.000,00/dia;
- - 
+
+
+## fluxo para pegar dados
+- pegar todas as ações -> https://statusinvest.com.br/acao/companiesnavigation?page=1&size=1000
+- entrar em uma ação -> https://statusinvest.com.br/acoes/lame4
+- lucro líquido + volume negociação -> https://statusinvest.com.br/acoes/lame4
+- Patrimônio Líquido -> https://statusinvest.com.br/acao/getbsactivepassivechart?companyName=lojas-americanas&type=2
+- dividas -> https://statusinvest.com.br/acao/getbsactivepassivechart?companyName=lojas-americanas&type=2
+- P/L + ROE -> https://statusinvest.com.br/acao/indicatorhistorical
+  - passar o ticker = 'ticker da ação' e time = 5
