@@ -18,5 +18,4 @@ PL = soup.find_all('div',attrs={'title': 'Dá uma ideia do quanto o mercado est�
 #Achando ROE da ação
 ROE = soup.find_all('div',attrs={'title': 'Mede a capacidade de agregar valor de uma empresa a partir de seus próprios recursos e do dinheiro de investidores.'})[0].find('strong').string
 
-print(PL)
-print(ROE)
+liquidez_media_diaria = soup.find_all('div', attrs={'class','info'})[7].find('strong').string
